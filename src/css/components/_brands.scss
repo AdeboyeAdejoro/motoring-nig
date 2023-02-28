@@ -1,0 +1,68 @@
+.brands {
+    margin: 0;
+    padding: 0;
+
+&__container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+&__title {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 74px;
+    width: 276px;
+    padding: 10px 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-text3);
+    background: rgba(38, 44, 113, 0.05);
+    border-radius: 8px;
+}
+
+&__content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+&__image {
+    margin: 0;
+    padding: 0;
+}
+
+&__image-src {
+    margin: 0;
+    padding: 0;
+}
+}
+
+.brands {
+    @include mobile {
+        display: block;
+
+        &__container {
+            max-width: 327px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 32px;
+        }
+
+        &__content {
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            margin-bottom: 64px;
+        }
+    }
+}

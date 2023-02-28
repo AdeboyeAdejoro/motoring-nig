@@ -1,0 +1,146 @@
+.about {
+margin: 0;
+padding: 0;
+padding-bottom: 80px;
+
+&__container {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+&__title {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 74px;
+    width: 137px;
+    padding: 10px 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-text3);
+    background: rgba(38, 44, 113, 0.05);
+    border-radius: 8px;
+}
+
+&__content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+&__text {
+    max-width: 270px;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    margin-bottom: 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--color-text5);
+}
+
+&__span {
+    margin: 0;
+    padding: 0;
+    color: var(--color-text2);
+}
+
+&__subtext {
+    max-width: 414px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-text5);
+}
+
+&__button {
+    @include btn-reset;
+    margin: 0;
+    padding: 10px 32px;
+    margin-bottom: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-white);
+    background-color: var(--color-text2);
+    border-radius: 8px;
+    @include my-transition;
+    @include my-hover;
+    @include my-transition2;
+    @include my-hover2;
+}
+
+&__right {
+    background-image: url("../images/aboutpic.svg");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+}
+
+}
+
+.about {
+    @include mobile {
+        display: block;
+
+        padding-bottom: 64px;
+
+        &__container {
+            max-width: 327px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__title {
+            font-size: 20px;
+            width: 120px;
+            margin-bottom: 32px;
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__left {
+            order: 2;
+        }
+
+        &__text {
+            max-width: 230px;
+            font-size: 24px;
+            padding-top: 0;
+        }
+
+        &__subtext {
+            max-width: 327px;
+        }
+
+        &__button {
+            margin-bottom: 32px;
+        }
+
+        &__right {
+            width: 327px;
+            height: 327px;
+            background-size: contain;
+            margin-bottom: 40px;
+        }
+    }
+}

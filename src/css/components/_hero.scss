@@ -1,0 +1,307 @@
+.hero {
+    background-color: #F1FFFF;
+    padding-bottom: 88px;
+
+&__container {
+    border-radius: 16px;
+    border: 2px solid var(--background-color);
+    background-color: var(--background-color);
+    position: relative;
+}
+
+
+&__box {
+    max-width: 1082px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+&__box-left {
+    max-width: 49%;
+}
+
+
+&__box-left-title {
+    max-width: 512px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    padding-top: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    color: var(--color-text);
+}
+
+&__box-left-title span {
+    color: var(--color-text2);
+}
+
+&__box-left-text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    max-width: 382px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-text);
+}
+
+&__box-left-button {
+    @include btn-reset;
+    margin: 0;
+    padding: 10px 32px;
+    margin-bottom: 70px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-white);
+    background-color: var(--color-text2);
+    border-radius: 8px;
+    @include my-transition;
+    @include my-hover;
+    @include my-transition2;
+    @include my-hover2;
+}
+
+&__box-right {
+    max-width: 49%;
+}
+
+&__img1 {
+    background-image: url("../images/heroimg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 408px;
+    height: 384px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+&__img2 {
+    background-image: url("../images/heroimg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 408px;
+    height: 383px;
+    position: absolute;
+    bottom: 0;
+    right: -68px;
+    z-index: 5;
+
+}
+
+&__design1 {
+    position: absolute;
+    max-width: 240px;
+    top: 0;
+    right: 0;
+    border: 1px solid var(--border-color);
+    background-color: var(--color-white);
+    border-radius: 12px;
+    z-index: 15;
+    background-image: url("../images/heroicon.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    padding-left: 68px;
+}
+
+&__design-title {
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    color: var(--color-text2);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+&__design-text {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    color: var(--color-text3);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 100%;
+}
+
+&__design2 {
+    position: absolute;
+    max-width: 240px;
+    top: 45%;
+    left: 45%;
+    border: 1px solid var(--border-color2);
+    background-color: var(--color-white);
+    border-radius: 12px;
+    z-index: 15;
+    background-image: url("../images/heroicon2.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    padding-left: 68px;
+}
+
+&__design2 .hero__design-title {
+    color: var(--border-color2);
+}
+
+&__design3 {
+    position: absolute;
+    max-width: 240px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid var(--border-color3);
+    background-color: var(--color-white);
+    border-radius: 12px;
+    z-index: 15;
+    background-image: url("../images/heroicon3.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+    padding-left: 68px;
+}
+
+&__design3 .hero__design-title {
+    color: var(--border-color3);
+}
+
+
+}
+
+.hero {
+    @include mobile {
+        display: block;
+        background: rgba(240,250,254, 1);
+
+        &__container {
+            max-width: 327px;
+            position: static;
+        }
+
+        &__box {
+            flex-direction: column;
+            position: static;
+            background-image: url("../images/heroimg2.png");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 16px;
+            padding-left: 22px;
+            margin-bottom: 64px;
+        }
+
+        &__box-left {
+            max-width: 100%;
+        }
+
+        &__box-left-title {
+            max-width: 270px;
+            font-size: 28px;
+        }
+
+        &__box-left-text {
+            max-width: 240px;
+        }
+
+        &__img1 {
+            display: none;
+        }
+
+        &__img2 {
+            display: none;
+        }
+
+        &__box-right {
+            max-width: 100%;
+        }
+
+        &__design1 {
+            max-width: 160px;
+            height: 52px;
+            background-position: 8px 4px;
+            padding-left: 60px;
+            top: 541px;
+            left: 220px;
+        }
+
+        &__design-title {
+            font-size: 10px;
+        }
+
+        &__design-text {
+            font-size: 6px;
+        }
+
+        &__design2 {
+            max-width: 160px;
+            height: 52px;
+            background-position: 8px 4px;
+            padding-left: 60px;
+            top: 616px;
+            left: 106px;
+        }
+
+        &__design3 {
+            max-width: 160px;
+            height: 52px;
+            background-position: 8px 4px;
+            padding-left: 60px;
+            top: 712px;
+            left: 220px;
+        }
+    }
+}
+
+.hero-box-mobile {
+    @include no-display;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &__img1 {
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/heromobilepic1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 244px;
+            height: 230px;
+        }
+
+        &__img2 {
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/heromobilepic2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 244px;
+            height: 230px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+    }
+}

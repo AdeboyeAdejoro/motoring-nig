@@ -1,0 +1,206 @@
+.order {
+    background-color: var(--color-white);
+    margin-bottom: 80px;
+
+&__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 72px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border: 1px solid var(--border-color4);
+    border-radius: 80px;
+    margin-bottom: 40px;
+    box-shadow: 0px 2px 4px rgba(20, 28, 31, 0.16);
+    
+}
+
+&__form-title {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--color-text3);
+    text-align: center;
+}
+
+&__label {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: var(--color-text-header);
+}
+
+&__form-input {
+    border: 1px solid var(--border-color5);
+    border-radius: 4px;
+    max-width: 400px;
+    padding: 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 36px;
+    margin-bottom: 32px;
+}
+
+&__form-input1 {
+    background-image: url("../images/formiconperson.svg");
+}
+
+&__form-input2 {
+    background-image: url("../images/formiconemail.png");
+}
+
+&__form-input3 {
+    background-image: url("../images/formiconlocation.svg");
+}
+
+&__form-input4 {
+    background-image: url("../images/formiconcall.svg");
+}
+
+&__form-select {
+    background-image: url("../images/formiconcar.svg");
+}
+
+&__form-input5 {
+    background-image: url("../images/formiconcar.svg");
+}
+
+&__form-select2 {
+    background-image: url("../images/formiconregistered.svg");
+}
+
+&__form-select3 {
+    background-image: url("../images/formiconcondition.svg");
+}
+
+&__form-button {
+    @include btn-reset;
+    display: flex;
+    align-self: center;
+    max-width: 145px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-white);
+    padding: 10px 32px;
+    background-color: var(--color-text2);
+    border-radius: 8px;
+    margin: 0;
+    margin-bottom: 40px;
+    @include my-transition;
+    @include my-hover;
+    @include my-transition2;
+    @include my-hover2;
+}
+
+&__button {
+    @include btn-reset;
+    max-width: 197px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: var(--color-text3);
+    color: var(--color-white);
+    padding: 10px 32px;
+    border-radius: 8px;
+    @include my-transition;
+    @include my-hover;
+    @include my-transition2;
+    @include my-hover2;
+}
+
+&__box {
+    // border: 1px solid yellow;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    display: none;
+    
+}
+
+&__terms-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text3);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+&__scroll {
+    width: 296px;
+    height: 470px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--color-text4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+}
+
+.simplebar-scrollbar {
+    background-color: #dddddd;
+}
+
+.show {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.simplebar-content-wrapper {
+    overflow: auto;
+}
+
+.order {
+    @include mobile {
+        display: block;
+
+        &__container {
+            max-width: 327px;
+        }
+
+        &__form {
+            max-width: 327px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        &__form-title {
+            font-size: 20px;
+        }
+    }
+}

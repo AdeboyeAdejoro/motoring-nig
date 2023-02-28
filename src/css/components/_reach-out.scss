@@ -1,0 +1,256 @@
+.reach-out {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+
+&__container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+&__title {
+    margin: 0;
+    padding: 0;
+    width: 212px;
+    padding: 10px 16px;
+    color: var(--color-text3);
+    background: rgba(38, 44, 113, 0.05);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+&__content {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+&__left {
+    padding: 0;
+    margin: 0;
+    width: 49%;
+}
+
+&__right {
+    padding: 0;
+    margin: 0;
+    width: 49%;
+    padding-left: 100px;
+}
+
+&__form {
+    padding: 0;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(20, 28, 31, 0.16);
+    border-radius: 24px;
+
+}
+
+&__label {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #121212;
+
+}
+
+&__input {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 11px 16px;
+    margin-bottom: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #668A99;
+    background: #FFFFFF;
+    border: 1px solid #DAD8D8;
+    border-radius: 8px;
+
+}
+
+&__textarea {
+    height: 147px;
+}
+
+&__button {
+    @include btn-reset;
+    width: 100%;
+    padding: 12px 220px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F0FAFE;
+    background: var(--color-text3);
+    border-radius: 8px;
+    @include my-transition;
+    @include my-hover;
+    @include my-transition2;
+    @include my-hover2;
+}
+
+&__svg {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+&__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #121212;
+
+}
+
+&__subtext {
+    max-width: 310px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #121212;
+}
+
+&__contacts {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+}
+
+&__contacts-left {
+    padding: 0;
+    margin: 0;
+}
+
+&__contacts-right {
+    padding: 0;
+    margin: 0;
+}
+
+&__link {
+    @include link-reset;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #121212;
+}
+
+&__list {
+    @include list-reset;
+    display: flex;
+}
+
+&__item {
+    padding: 0;
+    margin: 0;
+    margin-right: 24px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+&__item-link {
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+    
+}
+
+&__item-svg {
+    padding: 0;
+    margin: 0;
+    // display: inline-block;
+    // width: 150px;
+    // height: 70px;
+    
+}
+
+}
+
+.reach-out {
+    @include mobile {
+        display: block;
+        margin-bottom: 32px;
+
+        &__container {
+            max-width: 327px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 32px;
+
+        }
+
+        &__title {
+            margin-bottom: 32px;
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+            order: 2;
+        }
+
+        &__button {
+            padding: 0;
+        }
+
+        &__right {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 32px;
+        }
+
+        &__contacts {
+            flex-direction: column;
+        }
+    }
+}
+

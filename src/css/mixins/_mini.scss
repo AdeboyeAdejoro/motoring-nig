@@ -1,0 +1,106 @@
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin clear-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color: black;
+}
+
+@mixin my-transition {
+  transition: color .5s ease-in-out .1s;
+}
+
+@mixin my-hover {
+  &:hover {
+    color: orange;
+  }
+}
+
+@mixin my-transition2 {
+  transition: background-color .5s ease-in-out .1s;
+}
+
+@mixin my-hover2 {
+  &:hover {
+    background-color: blue;
+  }
+}
+
+@mixin my-transition3 {
+  transition: fill .5s ease-in-out .1s;
+}
+
+@mixin my-hover3 {
+  &:hover {
+    fill: orange;
+  }
+}
+
+// transition: color .5s ease-in-out .2s;
+//     &:hover {
+//         color: orange;
+//     }
+
+@mixin no-display {
+  display: none;
+}
