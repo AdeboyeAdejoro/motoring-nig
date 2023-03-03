@@ -81,3 +81,13 @@
     display: flex;
     align-items: center;
 }
+
+.blurry {
+    opacity: .2;
+}
+
+@media (max-width: 576px) {
+    .slider-container {
+        max-width: 576px;
+    }
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>motoring nigeria</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/vendor.css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -72,8 +73,8 @@
                 <div class="container hero__container">
                     <div class="hero__box">
                         <div class="hero__box-left">
-                            <h1 class="hero__box-left-title">Tow your vehicle
-                                <span>easily and fast</span>
+                            <h1 class="hero__box-left-title">Towing your vehicle
+                                <span>just got simpler!</span>
                             </h1>
                             <p class="hero__box-left-text">Our response time is second to none if you trust us.
                                 So have your vehicle towed in minutes.</p>
@@ -87,6 +88,18 @@
                     <div class="hero-box-mobile">
                         <div class="hero-box-mobile__img1"></div>
                         <div class="hero-box-mobile__img2"></div>
+                        <div class="hero-box-mobile__design1">
+                            <h2 class="hero-box-mobile__design-title">A Call Away</h2>
+                            <p class="hero-box-mobile__design-text">We are always a call away from delivering the best service to you</p>
+                        </div>
+                        <div class="hero-box-mobile__design2">
+                            <h2 class="hero-box-mobile__design-title">Swift Pick up</h2>
+                            <p class="hero-box-mobile__design-text">Your vehicle gets picked up in the shortest time possible</p>
+                        </div>
+                        <div class="hero-box-mobile__design3">
+                            <h2 class="hero-box-mobile__design-title">Customer Service</h2>
+                            <p class="hero-box-mobile__design-text">Our support are ready to have your issues resolved in no time</p>
+                        </div>
                     </div>
                     <div class="hero__design1">
                         <h2 class="hero__design-title">A Call Away</h2>
@@ -94,7 +107,7 @@
                     </div>
                     <div class="hero__design2">
                         <h2 class="hero__design-title">Swift Pick up</h2>
-                        <p class="hero__design-text">your vehicle gets picked up in the shortest time possible</p>
+                        <p class="hero__design-text">Your vehicle gets picked up in the shortest time possible</p>
                     </div>
                     <div class="hero__design3">
                         <h2 class="hero__design-title">Customer Service</h2>
@@ -113,20 +126,20 @@
                         <label for="pickup" class="order__label">Pick up location</label>
                         <input type="text" class="order__form-input order__form-input3" name="pickup" id="pickup" placeholder="Enter your pick up location">
                         <label for="pickupcontact" class="order__label">Pick up contact</label>
-                        <input type="tel" class="order__form-input order__form-input4" name="pickupcontact" id="pickupcontact" placeholder="Enter your pick up contact">
+                        <input type="tel" class="order__form-input order__form-input4" name="pickupcontact" id="pickupcontact" placeholder="Enter your pick up contact: 0812345678">
                         <label for="dropoff" class="order__label">Drop off location</label>
                         <input type="text" class="order__form-input order__form-input3" name="dropoff" id="dropff" placeholder="Enter your drop off location">
                         <label for="dropoffcontact" class="order__label">Drop off contact</label>
-                        <input type="tel" class="order__form-input order__form-input4" name="dropoffcontact" id="dropoffcontact" placeholder="Enter your drop off contact">
-                        <label for="select" class="order__label">Vehicle Type</label>
-                        <select name="vehicle type" class="order__form-input order__form-select" id="select">
+                        <input type="tel" class="order__form-input order__form-input4" name="dropoffcontact" id="dropoffcontact" placeholder="Enter your drop off contact: 0812345678">
+                        <label for="select" class="order__label no-display">Vehicle Type</label>
+                        <select name="vehicle type" class="order__form-input order__form-select no-display" id="select">
                             <option value="">Select vehicle type</option>
                             <option value="sedan">Sedan</option>
                             <option value="SUV">SUV</option>
                             <option value="Van">Van</option>
                             <option value="Truck">Truck</option>
                         </select>
-                        <div class="order__selector">
+                        <div class="order__selector no-display">
                             <div id="selectField">
                                 <p id="selectText">Select vehicle type</p>
                                 <img src="./images/arrow.svg" alt="arrow icon" id="arrowicon">
@@ -150,26 +163,26 @@
                                 </li>
                             </ul>
                         </div>
-                        <label for="vehicletype" class="order__label">Vehicle Brand &#38; Model/Year</label>
-                        <input type="text" class="order__form-input order__form-input5" name="vehicletype" id="vehicletype" placeholder="Toyota Corolla 2006">
-                        <label for="vehicleregistered" class="order__label">Vehicle registered?</label>
-                        <select name="vehicleregistered" id="vehicleregistered" class="order__form-input order__form-select order__form-select2">
+                        <label for="vehicletype" class="order__label no-display">Vehicle Brand &#38; Model/Year</label>
+                        <input type="text" class="order__form-input order__form-input5 no-display" name="vehicletype" id="vehicletype" placeholder="Toyota Corolla 2006">
+                        <label for="vehicleregistered" class="order__label no-display">Vehicle registered?</label>
+                        <select name="vehicleregistered" id="vehicleregistered" class="order__form-input order__form-select order__form-select2 no-display">
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                         </select>
-                        <label for="conditions" class="order__label">Conditions &#38; Gear Mobility</label>
-                        <select name="conditions" id="conditions" class="order__form-input order__form-select order__form-select3">
+                        <label for="conditions" class="order__label no-display">Conditions &#38; Gear Mobility</label>
+                        <select name="conditions" id="conditions" class="order__form-input order__form-select order__form-select3 no-display">
                             <option value="Accident">Accident</option>
                             <option value="Breakdown">Breakdown</option>
                             <option value="Other">Other</option>
                         </select>
-                        <label for="select-towvehicle" class="order__label"></label>
-                        <select name="towing vehicle type" class="order__form-input order__form-select" id="select-towvehicle">
+                        <label for="select-towvehicle" class="order__label no-display"></label>
+                        <select name="towing vehicle type" class="order__form-input order__form-select no-display" id="select-towvehicle">
                             <option value="">Towing vehicle type</option>
                             <option value="Flatbed truck">Flatbed truck</option>
                             <option value="Local towing van">Local towing van</option>    
                         </select>
-                        <div class="order__selector2">
+                        <div class="order__selector2 no-display">
                             <div id="selectField2">
                                 <p id="selectText2">Select vehicle type</p>
                                 <img src="./images/arrow.svg" alt="arrow icon" id="arrowicon2">
@@ -201,7 +214,7 @@ You must not use this Website/ mobile app, if you have any objection to any of t
 Website Standard Terms and Conditions.
                         </div>
                     </div>
-                    <button class="order__button" id="order__button">Schedule Pick up?</button>
+                    <button class="order__button no-display" id="order__button">Schedule Pick up?</button>
                 </div>
             </section>
             <section class="how-it-works" id="how-it-works">
@@ -216,7 +229,7 @@ Website Standard Terms and Conditions.
                         <div class="how-it-works-middle">
                             <img src="./images/how-it-works2.png" alt="picture of a hand holding a phone ordering a truck" class="how-it-works__img">
                             <p class="how-it-works__number how-it-works__color2">02</p>
-                            <p class="how-it-works__text">Nearest Motoring Nigeria picks up your request.</p>
+                            <p class="how-it-works__text">Our closest truck picks up your vehicle.</p>
                         </div>
                         <div class="how-it-works-right">
                             <img src="./images/how-it-works3.png" alt="picture of a hand holding a phone ordering a truck" class="how-it-works__img">
@@ -232,7 +245,7 @@ Website Standard Terms and Conditions.
                     <div class="about__content">
                         <div class="about__left">
                             <p class="about__text">Towing your vehicle just<span class="about__span"> got easier</span></p>
-                            <p class="about__subtext">Motoring Nigeria offers the best service when it comes to Highly recommend. Always faster, more reasonable and professional than AAA for towing. A few months ago waited nearly 2 hours for AAA to help my wife with a battery jump... Turns out you'll be charged more for AAA roadside call than if you call Wayne's Towing. </p>
+                            <p class="about__subtext">Motoring Nigeria is a company committed to providing a broad spectrum of automotive related solutions to our individual and corporate customers. We have gradually gathered industry expertise since 2014 and served our customers in the areas of vehicle roadside assistance, long distance vehicle haulage/towing, vehicle sales, auctions and automotive events. Our renewed commitment in 2023 is to continue to provide tailored solutions to our customers and exceed their expectations with impeccable customer service.</p>
                             <button class="about__button">Tow Now</button>
                         </div>
                         <div class="about__right"></div>
@@ -264,21 +277,75 @@ Website Standard Terms and Conditions.
                                         <div class="testimonials__content-flex">
                                             <div class="testimonials__profile">
                                                 <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
-                                                <p class="testimonials__name">Mary Smith</p>
+                                                <p class="testimonials__name">Iretiola Abebi</p>
                                             </div>
                                             <div class="testimonials__rating">
                                                 <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
                                                 <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
                                                 <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
                                                 <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
-                                                <img src="./images/testimonialstar2.svg" alt="unfilled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
                                             </div>
                                         </div>
-                                        <p class="testimonials__text">Highly recommend. Always faster, more reasonable and professional than AAA for towing. A few months ago waited nearly 2 hours for AAA to help my wife with a battery jump... Turns out you'll be charged more for AAA roadside call than if you call Wayne's Towing. </p>
+                                        <p class="testimonials__text">They helped me transport my RX350 from Lagos to Abuja with no issues. They were so calm with answering all my many requests and provided updates each time I asked.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide card">
                                     <div class="testimonials__content">
+                                        <div class="testimonials__content-flex">
+                                            <div class="testimonials__profile">
+                                                <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
+                                                <p class="testimonials__name">Freddie Magik</p>
+                                            </div>
+                                            <div class="testimonials__rating">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                            </div>
+                                        </div>
+                                        <p class="testimonials__text">These people are quite professional, they helped tow my GX460 from Owerri to Lagos, I like how they handled the communication and the trip generally, especially when they had a police with my car around Ore. Doesn't seem like a one man company. They have my support anytime any day.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <div class="testimonials__content">
+                                        <div class="testimonials__content-flex">
+                                            <div class="testimonials__profile">
+                                                <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
+                                                <p class="testimonials__name">Angelique Ola</p>
+                                            </div>
+                                            <div class="testimonials__rating">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                            </div>
+                                        </div>
+                                        <p class="testimonials__text">I honestly have not experienced this level of professionalism in the tow-space in Lagos. Quick response time if you consider the traffic, and timely delivery of my car within a considerable distance at a fair price. It feels good to know there are outfits that still proffer great services. I would recommend 100%.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <div class="testimonials__content">
+                                        <div class="testimonials__content-flex">
+                                            <div class="testimonials__profile">
+                                                <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
+                                                <p class="testimonials__name">Enilolobo Babajide</p>
+                                            </div>
+                                            <div class="testimonials__rating">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
+                                            </div>
+                                        </div>
+                                        <p class="testimonials__text">Excellent Service was referred by a friend, had to tow a vehicle, reached out to them and the tow truck arrived soon enough. Professional handling and will always recommend.</p>
+                                    </div>    
+                                </div>
+                                <div class="swiper-slide card">
+                                    <div class="testimonials__content blurry">
                                         <div class="testimonials__content-flex">
                                             <div class="testimonials__profile">
                                                 <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
@@ -294,24 +361,7 @@ Website Standard Terms and Conditions.
                                         </div>
                                         <p class="testimonials__text">Highly recommend. Always faster, more reasonable and professional than AAA for towing. A few months ago waited nearly 2 hours for AAA to help my wife with a battery jump... Turns out you'll be charged more for AAA roadside call than if you call Wayne's Towing. </p>
                                     </div>
-                                </div>
-                                <div class="swiper-slide card">
-                                    <div class="testimonials__content">
-                                        <div class="testimonials__content-flex">
-                                            <div class="testimonials__profile">
-                                                <img src="./images/testimonialspic1.png" alt="profile picture" class="testimonials__image">
-                                                <p class="testimonials__name">Mary Smith</p>
-                                            </div>
-                                            <div class="testimonials__rating">
-                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
-                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
-                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
-                                                <img src="./images/testimonialsstar1.svg" alt="filled rating star" class="testimonials__star">
-                                                <img src="./images/testimonialstar2.svg" alt="unfilled rating star" class="testimonials__star">
-                                            </div>
-                                        </div>
-                                        <p class="testimonials__text">Highly recommend. Always faster, more reasonable and professional than AAA for towing. A few months ago waited nearly 2 hours for AAA to help my wife with a battery jump... Turns out you'll be charged more for AAA roadside call than if you call Wayne's Towing. </p>
-                                    </div>
+                                    <button class="testimonials__button"><a href="#" class="testimonials__more">Read more reviews</a></button>    
                                 </div>
                                 <div class="swiper-slide card">
                                     <div class="testimonials__content">
@@ -337,7 +387,7 @@ Website Standard Terms and Conditions.
                     </div>
                 </div>
             </section>
-            <section class="reach-out" id="reach-out">
+            <section class="reach-out no-display" id="reach-out">
                 <div class="reach-out__container container">
                     <h6 class="reach-out__title">Reach out to us</h6>
                     <div class="reach-out__content">
@@ -484,7 +534,7 @@ Website Standard Terms and Conditions.
                     </div>
                 </div>
             </section>
-            <section class="update" id="update">
+            <section class="update no-display" id="update">
                 <div class="update__container container">
                     <p class="update__text-one">Don't be left out</p>
                     <p class="update__text-two">Get updates on our services</p>
@@ -499,78 +549,94 @@ Website Standard Terms and Conditions.
     <footer class="footer">
         <div class="footer__container container">
             <img src="./images/footerlogo.svg" alt="motoring nigeria logo" class="footer__logo">
-            <p class="footer__blurb">Motoring Nigeria is a towing service and motoring company that is tasked with giving the best and fastest services to the public in need of towing and motoring services and purchase</p>
-            <ul class="footer__nav-list">
-                <li class="footer__nav-item footer__nav-item1">
-                    <a href="#" class="footer__nav-link">Home</a>
-                </li>
-                <li class="footer__nav-item footer__nav-item2">
-                    <a href="#how-it-works" class="footer__nav-link">How it works</a>
-                </li>
-                <li class="footer__nav-item footer__nav-item3">
-                    <a href="#testimonials" class="footer__nav-link">Testimonials</a>
-                </li>
-                <li class="footer__nav-item footer__nav-item4">
-                    <a href="#about" class="footer__nav-link">About</a>
-                </li>
-                <li class="footer__nav-item footer__nav-item5">
-                    <a href="#reach-out" class="footer__nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="footer__divider"></div>
             <div class="footer__group">
                 <div class="footer__left">
-                    <p class="footer__left-text">&#169; 2022 Motoring Ng. All rights reserved</p>
+                    <h6 class="footer__title">Contact Us</h6>
+                    <p class="footer__address">Km 14, Lekki-Epe Expressway, Ologolo bus stop Lekki, Lagos State.</p>
+                    <p class="footer__phone">+234 916 685 9614</p>
+                    <p class="footer__mail">contact@motoringnigeria.com</p>
+                    <p class="footer__connect">Connect</p>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-list">
+                            <li class="footer__socials-item">
+                                <a href="" class="footer__socials-link">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="twitter-path" fill-rule="evenodd" clip-rule="evenodd" d="M21.8189 6.20226C21.1363 6.50471 20.4039 6.70983 19.6344 6.80141C20.4201 6.33089 21.0216 5.58459 21.3066 4.69804C20.5696 5.13377 19.756 5.45016 18.8892 5.62168C18.195 4.88116 17.2077 4.41992 16.1125 4.41992C14.0115 4.41992 12.308 6.12347 12.308 8.22335C12.308 8.52116 12.3416 8.81204 12.4065 9.09019C9.24507 8.93141 6.44177 7.41677 4.56556 5.11522C4.23759 5.67613 4.05101 6.32971 4.05101 7.02738C4.05101 8.34735 4.72316 9.51201 5.74298 10.1934C5.1195 10.1726 4.5331 10.001 4.01974 9.71595V9.76347C4.01974 11.6061 5.33159 13.1439 7.07104 13.4939C6.75235 13.5796 6.41629 13.6272 6.06862 13.6272C5.82295 13.6272 5.58538 13.6028 5.35244 13.5565C5.83683 15.0688 7.24141 16.1686 8.90556 16.1987C7.60413 17.2185 5.96316 17.8246 4.18083 17.8246C3.87374 17.8246 3.57126 17.8061 3.27344 17.7725C4.95729 18.8537 6.95635 19.4841 9.10489 19.4841C16.1033 19.4841 19.9288 13.6874 19.9288 8.66026L19.916 8.16774C20.6635 7.63462 21.3101 6.9648 21.8189 6.20226Z"/>
+                                        <mask id="mask0_163_7052" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="19" height="16">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8189 6.20226C21.1363 6.50471 20.4039 6.70983 19.6344 6.80141C20.4201 6.33089 21.0216 5.58459 21.3066 4.69804C20.5696 5.13377 19.756 5.45016 18.8892 5.62168C18.195 4.88116 17.2077 4.41992 16.1125 4.41992C14.0115 4.41992 12.308 6.12347 12.308 8.22335C12.308 8.52116 12.3416 8.81204 12.4065 9.09019C9.24507 8.93141 6.44177 7.41677 4.56556 5.11522C4.23759 5.67613 4.05101 6.32971 4.05101 7.02738C4.05101 8.34735 4.72316 9.51201 5.74298 10.1934C5.1195 10.1726 4.5331 10.001 4.01974 9.71595V9.76347C4.01974 11.6061 5.33159 13.1439 7.07104 13.4939C6.75235 13.5796 6.41629 13.6272 6.06862 13.6272C5.82295 13.6272 5.58538 13.6028 5.35244 13.5565C5.83683 15.0688 7.24141 16.1686 8.90556 16.1987C7.60413 17.2185 5.96316 17.8246 4.18083 17.8246C3.87374 17.8246 3.57126 17.8061 3.27344 17.7725C4.95729 18.8537 6.95635 19.4841 9.10489 19.4841C16.1033 19.4841 19.9288 13.6874 19.9288 8.66026L19.916 8.16774C20.6635 7.63462 21.3101 6.9648 21.8189 6.20226Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_163_7052)">
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="" class="footer__socials-link">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="facebook-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.6352 20.7836V12.8224H16.3585L16.7671 9.71883H13.6352V7.73766C13.6352 6.83938 13.8885 6.22722 15.2032 6.22722L16.8774 6.22655V3.45061C16.5878 3.41371 15.594 3.3291 14.4373 3.3291C12.0219 3.3291 10.3683 4.77518 10.3683 7.43028V9.71883H7.63672V12.8224H10.3683V20.7836H13.6352Z" fill="#C8C6CD"/>
+                                        <mask id="mask0_163_7051" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="7" y="3" width="10" height="18">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6352 20.7836V12.8224H16.3585L16.7671 9.71883H13.6352V7.73766C13.6352 6.83938 13.8885 6.22722 15.2032 6.22722L16.8774 6.22655V3.45061C16.5878 3.41371 15.594 3.3291 14.4373 3.3291C12.0219 3.3291 10.3683 4.77518 10.3683 7.43028V9.71883H7.63672V12.8224H10.3683V20.7836H13.6352Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_163_7051)">
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="" class="footer__socials-link">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="instagram-path" fill-rule="evenodd" clip-rule="evenodd" d="M7.60045 2.23828H16.399C19.3871 2.23828 21.8181 4.66928 21.818 7.65721V16.4557C21.818 19.4436 19.3871 21.8746 16.399 21.8746H7.60045C4.61252 21.8746 2.18164 19.4438 2.18164 16.4557V7.65721C2.18164 4.66928 4.61252 2.23828 7.60045 2.23828ZM16.3991 20.1324C18.4265 20.1324 20.0759 18.4831 20.0759 16.4557H20.0758V7.65721C20.0758 5.62994 18.4263 3.98051 16.399 3.98051H7.60045C5.57319 3.98051 3.92387 5.62994 3.92387 7.65721V16.4557C3.92387 18.4831 5.57319 20.1325 7.60045 20.1324H16.3991ZM6.85696 12.0566C6.85696 9.2207 9.16401 6.91361 11.9998 6.91361C14.8356 6.91361 17.1427 9.2207 17.1427 12.0566C17.1427 14.8923 14.8356 17.1993 11.9998 17.1993C9.16401 17.1993 6.85696 14.8923 6.85696 12.0566ZM8.6278 12.0565C8.6278 13.9158 10.1406 15.4283 11.9998 15.4283C13.8591 15.4283 15.3718 13.9158 15.3718 12.0565C15.3718 10.197 13.8592 8.68436 11.9998 8.68436C10.1404 8.68436 8.6278 10.197 8.6278 12.0565Z"/>
+                                        <mask id="mask0_163_7053" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60045 2.23828H16.399C19.3871 2.23828 21.8181 4.66928 21.818 7.65721V16.4557C21.818 19.4436 19.3871 21.8746 16.399 21.8746H7.60045C4.61252 21.8746 2.18164 19.4438 2.18164 16.4557V7.65721C2.18164 4.66928 4.61252 2.23828 7.60045 2.23828ZM16.3991 20.1324C18.4265 20.1324 20.0759 18.4831 20.0759 16.4557H20.0758V7.65721C20.0758 5.62994 18.4263 3.98051 16.399 3.98051H7.60045C5.57319 3.98051 3.92387 5.62994 3.92387 7.65721V16.4557C3.92387 18.4831 5.57319 20.1325 7.60045 20.1324H16.3991ZM6.85696 12.0566C6.85696 9.2207 9.16401 6.91361 11.9998 6.91361C14.8356 6.91361 17.1427 9.2207 17.1427 12.0566C17.1427 14.8923 14.8356 17.1993 11.9998 17.1993C9.16401 17.1993 6.85696 14.8923 6.85696 12.0566ZM8.6278 12.0565C8.6278 13.9158 10.1406 15.4283 11.9998 15.4283C13.8591 15.4283 15.3718 13.9158 15.3718 12.0565C15.3718 10.197 13.8592 8.68436 11.9998 8.68436C10.1404 8.68436 8.6278 10.197 8.6278 12.0565Z" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0_163_7053)">
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__middle">
+                    <h6 class="footer__title">Company</h6>
+                    <ul class="footer__company-list">
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">About Us</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Testimonials</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Partners</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Terms and Conditions</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__right">
-                    <ul class="footer__right-list">
-                        <li class="footer__right-item">
-                            <a href="#" class="footer__right-link">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="facebook-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.6352 20.7836V12.8224H16.3585L16.7671 9.71883H13.6352V7.73766C13.6352 6.83938 13.8885 6.22722 15.2032 6.22722L16.8774 6.22655V3.45061C16.5878 3.41371 15.594 3.3291 14.4373 3.3291C12.0219 3.3291 10.3683 4.77518 10.3683 7.43028V9.71883H7.63672V12.8224H10.3683V20.7836H13.6352Z" fill="#C8C6CD"/>
-                                    <mask id="mask0_163_7051" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="7" y="3" width="10" height="18">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6352 20.7836V12.8224H16.3585L16.7671 9.71883H13.6352V7.73766C13.6352 6.83938 13.8885 6.22722 15.2032 6.22722L16.8774 6.22655V3.45061C16.5878 3.41371 15.594 3.3291 14.4373 3.3291C12.0219 3.3291 10.3683 4.77518 10.3683 7.43028V9.71883H7.63672V12.8224H10.3683V20.7836H13.6352Z" fill="white"/>
-                                    </mask>
-                                    <g mask="url(#mask0_163_7051)">
-                                    </g>
-                                    </svg>                                    
-                            </a>
+                    <h6 class="footer__title">Service</h6>
+                    <ul class="footer__company-list">
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Emergency Towing</a>
                         </li>
-                        <li class="footer__right-item">
-                            <a href="" class="footer__right-link">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="twitter-path" fill-rule="evenodd" clip-rule="evenodd" d="M21.8189 6.20226C21.1363 6.50471 20.4039 6.70983 19.6344 6.80141C20.4201 6.33089 21.0216 5.58459 21.3066 4.69804C20.5696 5.13377 19.756 5.45016 18.8892 5.62168C18.195 4.88116 17.2077 4.41992 16.1125 4.41992C14.0115 4.41992 12.308 6.12347 12.308 8.22335C12.308 8.52116 12.3416 8.81204 12.4065 9.09019C9.24507 8.93141 6.44177 7.41677 4.56556 5.11522C4.23759 5.67613 4.05101 6.32971 4.05101 7.02738C4.05101 8.34735 4.72316 9.51201 5.74298 10.1934C5.1195 10.1726 4.5331 10.001 4.01974 9.71595V9.76347C4.01974 11.6061 5.33159 13.1439 7.07104 13.4939C6.75235 13.5796 6.41629 13.6272 6.06862 13.6272C5.82295 13.6272 5.58538 13.6028 5.35244 13.5565C5.83683 15.0688 7.24141 16.1686 8.90556 16.1987C7.60413 17.2185 5.96316 17.8246 4.18083 17.8246C3.87374 17.8246 3.57126 17.8061 3.27344 17.7725C4.95729 18.8537 6.95635 19.4841 9.10489 19.4841C16.1033 19.4841 19.9288 13.6874 19.9288 8.66026L19.916 8.16774C20.6635 7.63462 21.3101 6.9648 21.8189 6.20226Z"/>
-                                    <mask id="mask0_163_7052" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="19" height="16">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8189 6.20226C21.1363 6.50471 20.4039 6.70983 19.6344 6.80141C20.4201 6.33089 21.0216 5.58459 21.3066 4.69804C20.5696 5.13377 19.756 5.45016 18.8892 5.62168C18.195 4.88116 17.2077 4.41992 16.1125 4.41992C14.0115 4.41992 12.308 6.12347 12.308 8.22335C12.308 8.52116 12.3416 8.81204 12.4065 9.09019C9.24507 8.93141 6.44177 7.41677 4.56556 5.11522C4.23759 5.67613 4.05101 6.32971 4.05101 7.02738C4.05101 8.34735 4.72316 9.51201 5.74298 10.1934C5.1195 10.1726 4.5331 10.001 4.01974 9.71595V9.76347C4.01974 11.6061 5.33159 13.1439 7.07104 13.4939C6.75235 13.5796 6.41629 13.6272 6.06862 13.6272C5.82295 13.6272 5.58538 13.6028 5.35244 13.5565C5.83683 15.0688 7.24141 16.1686 8.90556 16.1987C7.60413 17.2185 5.96316 17.8246 4.18083 17.8246C3.87374 17.8246 3.57126 17.8061 3.27344 17.7725C4.95729 18.8537 6.95635 19.4841 9.10489 19.4841C16.1033 19.4841 19.9288 13.6874 19.9288 8.66026L19.916 8.16774C20.6635 7.63462 21.3101 6.9648 21.8189 6.20226Z" fill="white"/>
-                                    </mask>
-                                    <g mask="url(#mask0_163_7052)">
-                                    </g>
-                                    </svg>                                    
-                            </a>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Road Side Assistance</a>
                         </li>
-                        <li class="footer__right-item">
-                            <a href="" class="footer__right-link">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="instagram-path" fill-rule="evenodd" clip-rule="evenodd" d="M7.60045 2.23828H16.399C19.3871 2.23828 21.8181 4.66928 21.818 7.65721V16.4557C21.818 19.4436 19.3871 21.8746 16.399 21.8746H7.60045C4.61252 21.8746 2.18164 19.4438 2.18164 16.4557V7.65721C2.18164 4.66928 4.61252 2.23828 7.60045 2.23828ZM16.3991 20.1324C18.4265 20.1324 20.0759 18.4831 20.0759 16.4557H20.0758V7.65721C20.0758 5.62994 18.4263 3.98051 16.399 3.98051H7.60045C5.57319 3.98051 3.92387 5.62994 3.92387 7.65721V16.4557C3.92387 18.4831 5.57319 20.1325 7.60045 20.1324H16.3991ZM6.85696 12.0566C6.85696 9.2207 9.16401 6.91361 11.9998 6.91361C14.8356 6.91361 17.1427 9.2207 17.1427 12.0566C17.1427 14.8923 14.8356 17.1993 11.9998 17.1993C9.16401 17.1993 6.85696 14.8923 6.85696 12.0566ZM8.6278 12.0565C8.6278 13.9158 10.1406 15.4283 11.9998 15.4283C13.8591 15.4283 15.3718 13.9158 15.3718 12.0565C15.3718 10.197 13.8592 8.68436 11.9998 8.68436C10.1404 8.68436 8.6278 10.197 8.6278 12.0565Z"/>
-                                    <mask id="mask0_163_7053" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60045 2.23828H16.399C19.3871 2.23828 21.8181 4.66928 21.818 7.65721V16.4557C21.818 19.4436 19.3871 21.8746 16.399 21.8746H7.60045C4.61252 21.8746 2.18164 19.4438 2.18164 16.4557V7.65721C2.18164 4.66928 4.61252 2.23828 7.60045 2.23828ZM16.3991 20.1324C18.4265 20.1324 20.0759 18.4831 20.0759 16.4557H20.0758V7.65721C20.0758 5.62994 18.4263 3.98051 16.399 3.98051H7.60045C5.57319 3.98051 3.92387 5.62994 3.92387 7.65721V16.4557C3.92387 18.4831 5.57319 20.1325 7.60045 20.1324H16.3991ZM6.85696 12.0566C6.85696 9.2207 9.16401 6.91361 11.9998 6.91361C14.8356 6.91361 17.1427 9.2207 17.1427 12.0566C17.1427 14.8923 14.8356 17.1993 11.9998 17.1993C9.16401 17.1993 6.85696 14.8923 6.85696 12.0566ZM8.6278 12.0565C8.6278 13.9158 10.1406 15.4283 11.9998 15.4283C13.8591 15.4283 15.3718 13.9158 15.3718 12.0565C15.3718 10.197 13.8592 8.68436 11.9998 8.68436C10.1404 8.68436 8.6278 10.197 8.6278 12.0565Z" fill="white"/>
-                                    </mask>
-                                    <g mask="url(#mask0_163_7053)">
-                                    </g>
-                                    </svg>                                    
-                            </a>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Local Towing</a>
                         </li>
-                        <li class="footer__right-item">
-                            <a href="" class="footer__right-link">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="linkedin-path" d="M19.2 3.05664H4.8C3.81 3.05664 3 3.86664 3 4.85664V19.2566C3 20.2466 3.81 21.0566 4.8 21.0566H19.2C20.19 21.0566 21 20.2466 21 19.2566V4.85664C21 3.86664 20.19 3.05664 19.2 3.05664ZM8.4 18.3566H5.7V10.2566H8.4V18.3566ZM7.05 8.72664C6.15 8.72664 5.43 8.00664 5.43 7.10664C5.43 6.20664 6.15 5.48664 7.05 5.48664C7.95 5.48664 8.67 6.20664 8.67 7.10664C8.67 8.00664 7.95 8.72664 7.05 8.72664ZM18.3 18.3566H15.6V13.5866C15.6 12.8667 14.97 12.2366 14.25 12.2366C13.53 12.2366 12.9 12.8667 12.9 13.5866V18.3566H10.2V10.2566H12.9V11.3366C13.35 10.6166 14.34 10.0766 15.15 10.0766C16.86 10.0766 18.3 11.5166 18.3 13.2266V18.3566Z"/>
-                                    </svg>                                    
-                            </a>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Interstate Towing</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-link">Luxury Vehicle Support</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <p class="footer__final">Powered by Motoring Nigeria</p>
+            <div class="footer__divider"></div>
+            <p class="footer__final">&copy; 2023 Motoring Nigeria. All rights reserved</p>  
         </div>
     </footer>
 </body>

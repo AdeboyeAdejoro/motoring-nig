@@ -100,8 +100,8 @@
     width: 408px;
     height: 383px;
     position: absolute;
-    bottom: 0;
-    right: -68px;
+    bottom: 60px;
+    right: -60px;
     z-index: 5;
 
 }
@@ -109,16 +109,18 @@
 &__design1 {
     position: absolute;
     max-width: 240px;
-    top: 0;
-    right: 0;
+    top: 11px;
+    right: 1px;
     border: 1px solid var(--border-color);
     background-color: var(--color-white);
-    border-radius: 12px;
+    border-radius: 24px;
     z-index: 15;
     background-image: url("../images/heroicon.svg");
     background-repeat: no-repeat;
-    background-position: 12px 8px;
+    background-position: 12px 16px;
     padding-left: 68px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 &__design-title {
@@ -129,7 +131,8 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
     line-height: 120%;
 }
 
@@ -137,7 +140,8 @@
     margin: 0;
     padding: 0;
     padding-bottom: 8px;
-    color: var(--color-text3);
+    color: #c2d0d6;
+    max-width: 125px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -148,16 +152,18 @@
 &__design2 {
     position: absolute;
     max-width: 240px;
-    top: 45%;
-    left: 45%;
+    top: 35%;
+    left: 55%;
     border: 1px solid var(--border-color2);
     background-color: var(--color-white);
-    border-radius: 12px;
+    border-radius: 24px;
     z-index: 15;
     background-image: url("../images/heroicon2.svg");
     background-repeat: no-repeat;
-    background-position: 12px 8px;
+    background-position: 12px 16px;
     padding-left: 68px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 &__design2 .hero__design-title {
@@ -167,16 +173,18 @@
 &__design3 {
     position: absolute;
     max-width: 240px;
-    bottom: 0;
-    right: 0;
+    bottom: 106px;
+    right: 1px;
     border: 1px solid var(--border-color3);
     background-color: var(--color-white);
-    border-radius: 12px;
+    border-radius: 24px;
     z-index: 15;
     background-image: url("../images/heroicon3.svg");
     background-repeat: no-repeat;
-    background-position: 12px 8px;
+    background-position: 12px 16px;
     padding-left: 68px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 &__design3 .hero__design-title {
@@ -237,11 +245,12 @@
 
         &__design1 {
             max-width: 160px;
-            height: 52px;
+            // height: 52px;
             background-position: 8px 4px;
             padding-left: 60px;
             top: 541px;
-            left: 220px;
+            left: 266px;
+            display: none;
         }
 
         &__design-title {
@@ -254,20 +263,22 @@
 
         &__design2 {
             max-width: 160px;
-            height: 52px;
+            // height: 52px;
             background-position: 8px 4px;
             padding-left: 60px;
             top: 616px;
             left: 106px;
+            display: none;
         }
 
         &__design3 {
             max-width: 160px;
-            height: 52px;
+            // height: 52px;
             background-position: 8px 4px;
             padding-left: 60px;
-            top: 712px;
-            left: 220px;
+            bottom: 72px;
+            left: 266px;
+            display: none;
         }
     }
 }
@@ -303,5 +314,91 @@
             top: 30px;
             left: 30px;
         }
+
+        &__design1 {
+            position: absolute;
+            max-width: 215px;
+            top: 0;
+            right: 0;
+            border: 1px solid var(--border-color);
+            background-color: var(--color-white);
+            border-radius: 24px;
+            z-index: 15;
+            background-image: url("../images/heroicon.svg");
+            background-repeat: no-repeat;
+            background-position: 12px 16px;
+            padding-left: 68px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        &__design-title {
+            margin: 0;
+            padding: 0;
+            padding-top: 8px;
+            color: var(--color-text2);
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            margin-bottom: 10px;
+            line-height: 120%;
+        }
+        
+        &__design-text {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 8px;
+            color: #c2d0d6;
+            max-width: 125px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 100%;
+        }
+        
+        &__design2 {
+            position: absolute;
+            max-width: 215px;
+            top: 42%;
+            left: 0;
+            border: 1px solid var(--border-color2);
+            background-color: var(--color-white);
+            border-radius: 24px;
+            z-index: 15;
+            background-image: url("../images/heroicon2.svg");
+            background-repeat: no-repeat;
+            background-position: 12px 16px;
+            padding-left: 68px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        &__design2 .hero__design-title {
+            color: var(--border-color2);
+        }
+        
+        &__design3 {
+            position: absolute;
+            max-width: 215px;
+            bottom: -28px;
+            right: 0;  
+            border: 1px solid var(--border-color3);
+            background-color: var(--color-white);
+            border-radius: 24px;
+            z-index: 15;
+            background-image: url("../images/heroicon3.svg");
+            background-repeat: no-repeat;
+            background-position: 12px 16px;
+            padding-left: 68px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        &__design3 .hero__design-title {
+            color: var(--border-color3);
+        }
+        
     }
 }

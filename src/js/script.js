@@ -78,7 +78,7 @@ const slider = document.querySelector('.swiper-container');
 const swiperOptions = {
     slidesPerView: 2,
     spaceBetween: 10,
-    loop: false,
+    loop: true,
     // centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
